@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.introducion {
+  text-align: center;
+  margin: 15px;
+}
+
+.introducion > h1 {
+  color: rgb(255, 0, 234);
+  margin: 30px;
+}
+
+.introducion > p {
+  color: rgb(255, 0, 234);
+}
+
+span {
+  color: rgb(255, 0, 234);
+}
+
+.nis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.foto {
+  height: 50%;
+  width: auto;
+  border-radius: 500px;
+}
+
+.container, .container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  margin: 80px auto 0;
+}
+
+.img-aside img, .img-aside2 img {
+  height: 380px;
+  width: 350px;
+  border-radius: 500px;
+  margin: 10px;
+}
+
+.content > h2 {
+  color: rgb(255, 0, 234);
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.content > p {
+  margin-left: 25px;
+  color: rgb(255, 0, 234);
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  width: 200px;
+  height: 170px;
+}
+
+.footer-container {
+  text-align: center;
+  background-color: #000000;
+  padding: 20px;
+}
+
+.footer-container > h3 {
+  font-size: x-large;
+  color: rgb(255, 0, 234);
+  margin: 25px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer p.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 1.2rem;
+    background-color: rgb(255, 0, 234)
+  ;
+    border-radius: 50%;
+    color: #fff;
+    margin-bottom: 1.6rem;
+  }
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .navbar .logo img {
+      width: 120px;
+      height: 60px;
+    }
+  
+    .nis {
+      height: 50vh; /* Reduz a altura para telas menores */
+    }
+  
+    .container, .container2 {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .content, .content2 {
+      text-align: center;
+      width: 100%; /* Garantir que o conteúdo ocupe toda a largura da tela */
+      margin: 0;
+    }
+  
+    .img-aside, .img-aside2 {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .img-aside img, .img-aside2 img {
+      width: 90%; /* Ajusta a imagem para caber melhor em telas pequenas */
+      height: auto;
+    }
+  
+    .footer-container {
+      padding: 10px;
+    }
+  
+    .social-icons a {
+      margin: 0 5px;
+    }
+  
+    footer p.copyright {
+      font-size: 1.2rem;
+    }
+  
+    /* Ajustes para botões */
+    input[id="login"], .buy-button {
+      font-size: 14px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+
+  
+  @media (max-width: 1024px) {
+    .container, .container2 {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .img-aside, .img-aside2 {
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .img-aside img, .img-aside2 img {
+      width: 80%;
+      height: auto;
+    }
+  
+    .footer-container {
+      padding: 15px;
+    }
+  
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
